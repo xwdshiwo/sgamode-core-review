@@ -382,5 +382,3 @@ class AEMGNN:
             rel_avg = float(np.mean(feature_freq[mask]))
             self.relation_bias[ridx] += self.config.feedback_eta * (rel_avg - global_avg)
 
-
-LightweightAEMGNN = AEMGNN
